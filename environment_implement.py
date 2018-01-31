@@ -44,7 +44,7 @@ for num_of_episode in range(1000):
         if done:
             end = time.time()
             print("Time taken: "+str(end - start)+"s")
-            start = time.time()
+
             break
 
         observation = observation_new
