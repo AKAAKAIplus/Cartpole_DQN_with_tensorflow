@@ -1,7 +1,7 @@
 # encoding: utf-8
 import time
 import gym
-from nature_DQN import nature_DQN
+from double_network_DQN import double_network_DQN
 
 
 
@@ -10,10 +10,10 @@ env = env.unwrapped
 
 observation = env.reset()
 
-DQN = nature_DQN(num_of_actions=env.action_space.n, num_of_features=env.observation_space.shape[0])
+DQN = double_network_DQN(num_of_actions=env.action_space.n, num_of_features=env.observation_space.shape[0])
 
 count = 0
-for num_of_episode in range(5000):
+for num_of_episode in range(3000):
 
     observation = env.reset()
     ep_r = 0
