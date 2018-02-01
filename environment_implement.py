@@ -18,7 +18,7 @@ print(env.observation_space.low)
 print(env.observation_space.shape[0]) 
 
 count = 0
-for num_of_episode in range(500):
+for num_of_episode in range(100):
 
     observation = env.reset()
     ep_r = 0
